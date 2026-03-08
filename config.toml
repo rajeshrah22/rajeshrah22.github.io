@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://rajeshrah22.github.io"
+base_url = "https://captainrah.dev"
 title = "Rahul's blog site"
 description = "Reads like an engineering journal"
 compile_sass = true
