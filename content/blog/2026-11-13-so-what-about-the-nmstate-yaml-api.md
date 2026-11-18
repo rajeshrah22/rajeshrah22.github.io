@@ -84,7 +84,7 @@ TLDR; Serde saves us work in custom serialization / deserialization logic.
 
 Using `serde_yaml`, we can deserialize and serelize rust types into YAML / JSON.
 Meaning, the Rust types themselves serve as the source of truth for the JSON
-scema of the network state. So pretty much any data structure that implements
+schema of the network state. So pretty much any data structure that implements
 serde's `Serialize` / `Deserialize` trait is public and exposed to external consumers.
 
 For example, take an basic interface configuration:
