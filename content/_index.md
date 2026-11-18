@@ -1,4 +1,5 @@
 +++
+template = "pages.html"
 title = "Welcome to Rahul's Developer Blog"
 description = "Rahul's developer blog. Rahul is a developer working on Linux Networking."
 +++
@@ -9,9 +10,7 @@ I am currently working on Linux Network Management tools at Red Hat.
 
 Upstream projects include [NetworkManager](https://gitlab.freedesktop.org/NetworkManager/NetworkManager), [nmstate](https://github.com/nmstate/nmstate), and more.
 
-I want this blog to read like an engineering journal. I want to write about interesting bugs and challenges I face as I do my work.
-
-## $whoami
+## More facts about me
 
 - I like being active, and going outside. I play soccer and other sports recreationally. I also specialize in going on walks after eating.
 - I like going to open source conferences.

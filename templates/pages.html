@@ -1,0 +1,55 @@
+{#
+This Template is for the 'Pages' (abridge/content/pages) eg: example.com/about/  example.com/privacy/
+This Template can also be used as a home page for the index, eg: example.com/
+Some people prefer a landing page for the index, and then use a separate paginated page for their blog.
+#}
+
+{% extends "base.html" %}
+
+{%- block seo -%}
+  {{- super() -}}
+  {%- set title_addition = "" -%}
+  {%- if page and page.title and config.title -%}
+    {%- set title = page.title -%}
+    {%- set title_addition = title_separator ~ config.title -%}
+  {%- elif section.title and config.title -%}
+    {%- set title = section.title -%}
+    {%- set title_addition = title_separator ~ config.title -%}
+  {%- elif page and page.title -%}
+    {%- set title = page.title -%}
+  {%- elif section.title -%}
+    {%- set title = section.title -%}
+  {%- else -%}
+    {%- set title = config.title -%}
+  {%- endif -%}
+  {%- if page and page.description -%}
+    {%- set description = page.description -%}
+  {%- elif section and section.description -%}
+    {%- set description = section.description -%}
+  {%- else -%}
+    {%- set description = config.description -%}
+  {%- endif -%}
+  {%- if page %}
+  {{<seo config={config}  title={title}  title_addition={title_addition}  description={description or ""}  page_url={current_url}  page={page} />}}
+  {%- elif section %}
+  {{<seo config={config}  title={title}  title_addition={title_addition}  description={description or ""}  page_url={current_url}  page={section} />}}
+  {%- else %}
+  {{<seo config={config}  title={title}  title_addition={title_addition}  description={description or ""}  page_url={current_url} />}}
+  {%- endif %}
+{%- endblock seo -%}
+
+{%- block content %}
+    <div>
+{%- if page and page.title %}
+      <h1>{{ page.title }}</h1>
+{%- elif section and section.title %}
+      <h1>{{ section.title }}</h1>
+{%- endif %}
+
+{%- if page and page.content %}
+{{ page.content | safe }}
+{%- elif section.content %}
+{{ section.content | safe }}
+{%- endif %}
+    </div>
+{%- endblock content %}
