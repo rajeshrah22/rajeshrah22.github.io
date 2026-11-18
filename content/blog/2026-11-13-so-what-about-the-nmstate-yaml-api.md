@@ -17,7 +17,7 @@ Netfyr is a declarative network configuration utility for Linux that aims
 to make linux networking easier, more intuitive and explainable. Spiritually,
 it is the combination of NetworkManager and nmstate written in Rust.  It allows a YAML configuration frontend and itself applies the configuration at the kernel layer.
 
-See more about it netfyr.io.
+See more about it at [netfyr.io](https://netfyr.io).
 See my DevConf talk about what and why we are doing it [here](https://youtu.be/-bWW5NLkUSs?si=H02uLQXe0NYDaJaF)
 
 ## NMstate
