@@ -167,10 +167,15 @@ change it on a patch release. Exceptions need to be carefully considered.
 Backwards compatibility is maintained with most fields being optional, with new fields
 not an exception. We make fields optional with `#[serde(skip_serializing_if = "Option::is_none")]`
 
+There are internal representations of the network state, including routes, route rules, interfaces,
+and more that merge the desired state and the current state into a merged representation.
+
+These will be talked about more in a future blog about the core logic of nmstate.
+
 ### Evolution and Versioning
 
 So, the schema evolves naturally with additional optional fields as new features are added.
-Unlike some projects, we do not support multiple versions of the schema at once. Th
+Unlike some projects, we do not support multiple versions of the schema at once.
 
 ### Quirks
 
