@@ -6,6 +6,13 @@ description = "My aspirations with my homelab"
 tags = ["linux", "homelab", "IT", "cloudflare", "Rocky"]
 +++
 
+<br/>
+<br/>
+<br/>
+
+{{<img src="/img/rocky-release-terminal.png" alt="Terminal output showing Rocky Linux release" caption="Rocky Linux on Homelab"/>}}
+
+
 There exists no scripture out there that says God will be pleased with the
 homelabbers; moreover, my future wife most definitely won't be impressed
 by my Linux terminal skills. So, why maintain a homelab then?
