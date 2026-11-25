@@ -1,5 +1,5 @@
 +++
-title = "Homebelab: For Fun and no Profit"
+title = "Homelab: For Fun and no Profit"
 date = 2026-11-24
 description = "My aspirations with my homelab"
 [taxonomies]
@@ -37,10 +37,11 @@ and understanding computer systems.
 
 In my job, I have the narrow task of reproducing and fixing specifig bugs related
 to nmstate and NetworkManager, which are network configuration tools for linux.
-This usually doesn't incentivise the understanding of the entirety of the system.
-I don't need to worry about the firewalld config of the NetworkManager user in
-most cases, how to exactly reproduce their OCP cluster, or even their entire network
-config. So, there is some room for learning here in terms of operations.
+This usually doesn't incentivise nderstanding the entirety of the system.
+I don't need to worry about the firewalld config of the end user in most
+cases, how to exactly reproduce their OCP cluster, or even their entire network
+config. So, there is some room for learning here in terms of operations and
+system configuration.
 
 ## Operations, DevOps, and Site Reliablity
 
@@ -59,22 +60,21 @@ with them in interviews, conferences, networking events, etc.
 
 ## Okay enough writing
 
-My senteces have been getting shorter lol.
+My sentences have been getting shorter lol.
 
 ## Goals
 
 - Transfer my website from Github pages to self hosted.
 - Self host a private, home Bitwarden server for myself
-  and potentially my Family.
+  and potentially my family.
 
 ## Stretch Goals
 
-These may require more hardware or more thought out setup.
+These may require more hardware or a more thought out setup.
 Especially the mail server.
 
 - Self host a mail server.
-- Self host SearXNG for browsing.
-- Serve local Media.
+- Self host SearXNG for browsing.  - Serve local Media.
 - Local network storage.
 
 ## Next blog
