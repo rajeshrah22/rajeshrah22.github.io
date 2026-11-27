@@ -79,4 +79,6 @@ Especially the mail server.
 
 ## Next blog
 
-You can go see the next blog for what my current setup is.
+You can go see the next blog for what my current setup is. To be
+determined ... maybe a backup authentication / credential store
+for my yubikey? Or even host this website on there!
